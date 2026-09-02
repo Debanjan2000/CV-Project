@@ -40,6 +40,40 @@ An analysis of 1 million ground-truth boxes confirmed that 100% of valid targets
 - **Post-Processing:** This polygon acts as a safety net during inference. Any predicted bounding box centers that fall outside this polygon (e.g., in the sky) are automatically intercepted and deleted to prevent hallucination penalties.
 
 ---
+## 🚀 Setup & Installation
+
+**1. Clone the repository and install dependencies:**
+```bash
+git clone https://github.com/Debanjan2000/CV-Project.git
+cd CV-Project/RTIOD/project
+
+# Create a virtual environment (optional but recommended)
+conda create -n thermal python=3.10
+conda activate thermal
+
+# Install all required packages
+pip install -r requirements.txt
+```
+
+**2. Dataset Preparation:**
+Download the [LTDv2 Dataset from Hugging Face](https://huggingface.co/datasets/vapaau/LTDv2) and extract it directly into the `data/` folder inside the `project/` directory.
+
+Your folder structure should look exactly like this before running any scripts:
+```text
+RTIOD/project/
+├── data/
+│   ├── data.yaml                  # Core dataset configuration
+│   ├── data_pca.yaml              # PCA dataset configuration
+│   ├── images/
+│   │   ├── train/
+│   │   └── val/
+│   └── labels/
+│       ├── train/
+│       └── val/
+```
+*(Note: The `data/` directory is automatically ignored by `.gitignore` to prevent uploading massive files to GitHub).*
+
+---
 ## 📂 Project Structure
 
 ```text
