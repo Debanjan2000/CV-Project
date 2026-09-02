@@ -1,0 +1,11 @@
+PCA model already exists at /raid/ai24mtech12009/cv_proj/RTIOD/startingkit/data/pca_model.pt
+Re-run Pass 1? (y/N): 
+======================================================================
+PASS 2: Applying Global PCA to Generate 3-Channel Tensors
+======================================================================
+Loaded PCA model: K=50, trained on 1225 templates
+Total frames to process: 438422
+Spawning 36 workers across GPUs [2, 3, 4, 5, 6, 7]...
+
+3-Channel Tensor Generation Complete!
+Output saved to: /raid/ai24mtech12009/cv_proj/RTIOD/startingkit/data/pca_images/train

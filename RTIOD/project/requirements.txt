@@ -1,0 +1,12 @@
+hydra-core
+matplotlib
+omegaconf
+pillow
+pycocotools
+scikit-learn
+scipy
+tqdm
+wandb
+seaborn
+huggingface_hub
+ultralytics

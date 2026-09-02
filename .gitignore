@@ -1,0 +1,9 @@
+# Ignore massive datasets and outputs
+RTIOD/project/data/
+RTIOD/project/submissions/
+RTIOD/project/runs/
+RTIOD/project/scores/
+
+# Ignore Python caches
+__pycache__/
+*.pyc

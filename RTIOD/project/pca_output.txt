@@ -1,0 +1,25 @@
+======================================================================
+PASS 1: Building Background Templates & Learning Global PCA Subspace
+======================================================================
+Total images: 438422
+Hourly groups found: 2337
+Building templates with 48 workers...
+
+Valid templates: 1225
+Discarded groups (pixel always occluded): 1112
+
+Fitting PCA with k=50 components on 1225 templates (d=110592)...
+Running GPU SVD (torch.pca_lowrank)...
+Orthonormality check (should be identity): max off-diagonal = 0.000007
+
+PCA model saved to: /raid/ai24mtech12009/cv_proj/RTIOD/startingkit/data/pca_model.pt
+  μ shape: torch.Size([110592, 1])
+  U shape: torch.Size([110592, 50])
+  Top-5 singular values: [280185.125, 266730.03125, 167156.984375, 129651.4765625, 110404.4453125]
+
+======================================================================
+PASS 2: Applying Global PCA to Generate 3-Channel Tensors
+======================================================================
+Loaded PCA model: K=50, trained on 1225 templates
+Total frames to process: 438422
+Spawning 36 workers across GPUs [2, 3, 4, 5, 6, 7]...

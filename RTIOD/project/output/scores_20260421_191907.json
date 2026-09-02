@@ -1,0 +1,110 @@
+{
+    "global_map": 0.0,
+    "global_map_50": 0.0,
+    "global_map_75": 0.0,
+    "global_mar_1": 0.0,
+    "global_mar_10": 0.0,
+    "global_mar_100": 0.0,
+    "global_map_per_class": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+    ],
+    "jan_map": 0.0,
+    "jan_map_50": 0.0,
+    "jan_map_75": 0.0,
+    "jan_mar_1": 0.0,
+    "jan_mar_10": 0.0,
+    "jan_mar_100": 0.0,
+    "jan_map_per_class": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "feb_map": 0.0,
+    "feb_map_50": 0.0,
+    "feb_map_75": 0.0,
+    "feb_mar_1": 0.0,
+    "feb_mar_10": 0.0,
+    "feb_mar_100": 0.0,
+    "feb_map_per_class": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+    ],
+    "mar_map": 0.0,
+    "mar_map_50": 0.0,
+    "mar_map_75": 0.0,
+    "mar_mar_1": 0.0,
+    "mar_mar_10": 0.0,
+    "mar_mar_100": 0.0,
+    "mar_map_per_class": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+    ],
+    "apr_map": 0.0,
+    "apr_map_50": 0.0,
+    "apr_map_75": 0.0,
+    "apr_mar_1": 0.0,
+    "apr_mar_10": 0.0,
+    "apr_mar_100": 0.0,
+    "apr_map_per_class": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+    ],
+    "may_map": 0.0,
+    "may_map_50": 0.0,
+    "may_map_75": 0.0,
+    "may_mar_1": 0.0,
+    "may_mar_10": 0.0,
+    "may_mar_100": 0.0,
+    "may_map_per_class": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+    ],
+    "jun_map": 0.0,
+    "jun_map_50": 0.0,
+    "jun_map_75": 0.0,
+    "jun_mar_1": 0.0,
+    "jun_mar_10": 0.0,
+    "jun_mar_100": 0.0,
+    "jun_map_per_class": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+    ],
+    "jul_map": 0.0,
+    "jul_map_50": 0.0,
+    "jul_map_75": 0.0,
+    "jul_mar_1": 0.0,
+    "jul_mar_10": 0.0,
+    "jul_mar_100": 0.0,
+    "jul_map_per_class": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "aug_map": 0.0,
+    "aug_map_50": 0.0,
+    "aug_map_75": 0.0,
+    "aug_mar_1": 0.0,
+    "aug_mar_10": 0.0,
+    "aug_mar_100": 0.0,
+    "aug_map_per_class": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+    ],
+    "global_map_con": NaN,
+    "global_map_bal": NaN
+}

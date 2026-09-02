@@ -1,0 +1,19 @@
+seed: 42
+numClass: 4
+currentDir: ${hydra:runtime.cwd}
+modelCheckpoint: runs/detect/train2/weights/best.pt
+submission:
+  type: val
+  valTemplate: ${hydra:runtime.cwd}/submission_template_development.json
+  testTemplate: ${hydra:runtime.cwd}/submission_template_testing.json
+imgSize: 224
+lr: 5.0e-05
+batchSize: 16
+epochs: 100
+patience: 10
+dataDir: ${hydra:runtime.cwd}/data/
+trainAnnFile: ${hydra:runtime.cwd}/data/Train.json
+valAnnFile: ${hydra:runtime.cwd}/data/Valid.json
+testAnnFile: ${hydra:runtime.cwd}/data/TestNoLabels.json
+transform: true
+outputDir: ${hydra:runtime.cwd}/checkpoint
