@@ -61,7 +61,7 @@ cd RTIOD/project
 **2. Dataset Preparation:**
 Download the [LTDv2 Dataset from Hugging Face](https://huggingface.co/datasets/vapaau/LTDv2) and extract it directly into the `data/` folder inside the `project/` directory.
 
-Your folder structure should look exactly like this before running any scripts:
+The `data.yaml` configuration file is already provided in the repository. Your folder structure should look exactly like this before running any scripts:
 ```text
 RTIOD/project/
 ├── data/
@@ -74,7 +74,6 @@ RTIOD/project/
 │       ├── train/
 │       └── val/
 ```
-*(Note: The `data/` directory is automatically ignored by `.gitignore` to prevent uploading massive files to GitHub).*
 
 ---
 ## 📂 Project Structure
