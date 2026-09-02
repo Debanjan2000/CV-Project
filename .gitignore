@@ -7,3 +7,4 @@ RTIOD/project/scores/
 # Ignore Python caches
 __pycache__/
 *.pyc
+RTIOD/assets/

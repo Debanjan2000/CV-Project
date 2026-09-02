@@ -29,7 +29,7 @@ To isolate objects from the shifting background, Principal Component Analysis (P
 - **PCA Computation:** The top 50 eigenvectors were extracted to form a matrix ($U$) that learns background variations.
 - **Detector Input:** Each new frame ($I_t$) is projected into this subspace to reconstruct the pure background ($B_t$). The residual image ($R_t = I_t - B_t$) completely strips away drift. Finally, a robust 3-channel input `[I_t, B_t, R_t]` is passed to the YOLO detector.
 
-![PCA 3-Channel Imgs](RTIOD/project/3_channel_imgs(pca).png)
+![PCA 3-Channel Architecture](RTIOD/project/3_channel_imgs(pca).png)
 
 ### 3. High-Resolution Detection Head
 The base **YOLOv8m** architecture was modified by adding an extra detection head at the **P2 resolution**. This specialized high-resolution head allows the model to capture and detect much smaller, low-resolution objects typical in thermal imaging.
@@ -40,20 +40,6 @@ An analysis of 1 million ground-truth boxes confirmed that 100% of valid targets
 - **Post-Processing:** This polygon acts as a safety net during inference. Any predicted bounding box centers that fall outside this polygon (e.g., in the sky) are automatically intercepted and deleted to prevent hallucination penalties.
 
 ---
-## 📂 Project Structure
-
-```text
-RTIOD/project/
-├── scripts/
-│   ├── oversample_dataset.py      # (Phase 1) Duplicates minority classes to fix imbalance
-│   ├── build_pca_dataset.py       # (Phase 1) Generates 3-channel PCA tensor inputs
-│   └── detect_rank1.py            # (Phase 3) Convex hull spatial filtering & inference
-├── configs/
-│   └── rank1_yolov8m.yaml         # P2 Head (Stride 4) model configuration
-└── train_rank1.py                 # (Phase 2) Distributed Data Parallel training script
-```
-
----
 
 ## 📊 Results
 
@@ -61,8 +47,6 @@ The custom pipeline significantly outperformed the baseline model across multipl
 
 - **Global mAP@50:** Achieved **0.59** (a **22% improvement** over the baseline mAP@50 of 0.48).
 - **Final Balanced Score:** Raised the weighted balanced score from **0.43 to 0.48**.
-
-![DEtection result](RTIOD/project/runs/detect/visualizations/demo_predictions/image0.jpg) ![DEtection result](RTIOD/project/runs/detect/visualizations/demo_predictions/image1.jpg)
 
 ### Class-Wise mAP Performance
 | Class | mAP |
