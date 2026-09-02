@@ -1,0 +1,17 @@
+torch
+torchvision
+ultralytics
+opencv-python
+numpy
+scipy
+tqdm
+Pillow
+matplotlib
+seaborn
+scikit-learn
+pycocotools
+hydra-core
+omegaconf
+wandb
+torchmetrics
+huggingface-hub

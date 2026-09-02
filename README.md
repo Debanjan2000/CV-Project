@@ -45,7 +45,7 @@ An analysis of 1 million ground-truth boxes confirmed that 100% of valid targets
 **1. Clone the repository and install dependencies:**
 ```bash
 git clone https://github.com/Debanjan2000/CV-Project.git
-cd CV-Project/RTIOD/project
+cd CV-Project
 
 # Create a virtual environment (optional but recommended)
 conda create -n thermal python=3.10
@@ -53,6 +53,9 @@ conda activate thermal
 
 # Install all required packages
 pip install -r requirements.txt
+
+# Move into the project directory
+cd RTIOD/project
 ```
 
 **2. Dataset Preparation:**
