@@ -29,6 +29,8 @@ To isolate objects from the shifting background, Principal Component Analysis (P
 - **PCA Computation:** The top 50 eigenvectors were extracted to form a matrix ($U$) that learns background variations.
 - **Detector Input:** Each new frame ($I_t$) is projected into this subspace to reconstruct the pure background ($B_t$). The residual image ($R_t = I_t - B_t$) completely strips away drift. Finally, a robust 3-channel input `[I_t, B_t, R_t]` is passed to the YOLO detector.
 
+![PCA 3-Channel Architecture](RTIOD/project/3_channel_imgs(pca).png)
+
 ### 3. High-Resolution Detection Head
 The base **YOLOv8m** architecture was modified by adding an extra detection head at the **P2 resolution**. This specialized high-resolution head allows the model to capture and detect much smaller, low-resolution objects typical in thermal imaging.
 
