@@ -2,7 +2,7 @@
 
 **An End-to-End YOLOv8m-P2 Pipeline for Thermal Image Object Detection**
 
-This repository contains the code and implementation for a custom object detection pipeline designed to tackle the unique challenges of the **RTIOD Challenge** (Robust Thermal Image Object Detection).
+This repository contains the code and implementation for a custom object detection pipeline designed to tackle the object detection in low resolution thermal images.
 
 ## 📌 Overview & Challenges
 
