@@ -8,3 +8,7 @@ RTIOD/project/scores/
 __pycache__/
 *.pyc
 RTIOD/assets/
+RTIOD/project/README.md
+RTIOD/project/README_RANK1_SUMMARY.md
+RTIOD/project/README_WALKTHROUGH.md
+RTIOD/project/config/
